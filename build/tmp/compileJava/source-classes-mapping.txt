@@ -1,12 +1,14 @@
-controller/CustomerController.java
- controller.CustomerController
-model/Customer.java
- model.Customer
-config/AppConfiguration.java
- config.AppConfiguration
-service/ICustomerService.java
- service.ICustomerService
+model/CustomerForm.java
+ model.CustomerForm
 config/AppInitializer.java
  config.AppInitializer
+model/Customer.java
+ model.Customer
 service/CustomerServiceImpl.java
  service.CustomerServiceImpl
+service/ICustomerService.java
+ service.ICustomerService
+config/AppConfiguration.java
+ config.AppConfiguration
+controller/CustomerController.java
+ controller.CustomerController

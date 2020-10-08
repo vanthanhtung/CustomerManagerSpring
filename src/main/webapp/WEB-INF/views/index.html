@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="/layout :: head">
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>List Customer</title>
 </head>
 <body>
 <h3>Customers</h3>
@@ -15,8 +15,8 @@
         <th>Name</th>
         <th>Email</th>
         <th>Address</th>
-        <th>Edit</th>
-        <th>Delete</th>
+        <th>image</th>
+        <th>Action</th>
         <th>View</th>
     </tr>
     </thead>
@@ -25,8 +25,11 @@
         <td th:text="${customer.name}"></td>
         <td th:text="${customer.getEmail()}"></td>
         <td th:text="${customer.getAddress()}"></td>
-        <td><a th:href="@{/customer/{id}/edit(id=${customer.getId()})}">edit</a></td>
-        <td><a th:href="@{/customer/{id}/delete(id=${customer.getId()})}">delete</a></td>
+        <td><img th:src="@{'/i/'+ ${customer.getImage()}}" width="100"/></td>
+        <td>
+            <a th:href="@{/customer/{id}/edit(id=${customer.getId()})}">edit</a>
+            <a th:href="@{/customer/{id}/delete(id=${customer.getId()})}">delete</a>
+        </td>
         <td><a th:href="@{/customer/{id}/view(id=${customer.getId()})}">view</a></td>
     </tr>
     </tbody>

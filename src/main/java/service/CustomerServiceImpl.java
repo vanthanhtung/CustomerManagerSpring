@@ -8,14 +8,12 @@ import java.util.List;
 public class CustomerServiceImpl implements ICustomerService{
     static List<Customer> customerList = new ArrayList<>();
     static {
-        Customer customer1 = new Customer(1,"Tung","tung@gmail.com","Ha Noi");
-        Customer customer2 = new Customer(1,"Nghia","nghia@gmail.com","Ha Tay");
-        Customer customer3 = new Customer(1,"Van","van@gmail.com","Ha Noi 2");
-        Customer customer4 = new Customer(1,"Lam","lam@gmail.com","Ha Dong");
-        Customer customer5 = new Customer(1,"Hung","hung@gmail.com","Ha Nam");
+        Customer customer1 = new Customer(1,"Tung","vantung@gmail.com","Ha Noi","1.jpg");
+        Customer customer3 = new Customer(2,"Van","anhvan@gmail.com","Ha Tay","2.jpg");
+        Customer customer4 = new Customer(3,"Lam","duclam@gmail.com","Ha Dong","3.jpg");
+        Customer customer5 = new Customer(4,"Hung","phihung@gmail.com","Ha Nam","4.jpg");
 
         customerList.add(customer1);
-        customerList.add(customer2);
         customerList.add(customer3);
         customerList.add(customer4);
         customerList.add(customer5);

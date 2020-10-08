@@ -9,6 +9,9 @@
 </p>
 <div id="detail">
     <div class="cusdetail">
+        <img th:src="@{'/i/'+ ${customer.getImage()}}" width="200"/>
+    </div>
+    <div class="cusdetail">
         <label>Name:</label>
         <label th:text="${customer.getName()}"></label>
     </div>
@@ -20,6 +23,7 @@
         <label>Address:</label>
         <label th:text="${customer.getAddress()}"></label>
     </div>
+
 </div>
     <footer th:replace="/layout :: footer"></footer>
 </body>
